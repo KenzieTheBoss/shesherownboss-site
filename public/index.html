@@ -662,7 +662,8 @@
     <p class="sec-sub">Need an AI receptionist, a custom website, or an automation for your business? Tell me what you're building and I'll get back to you.</p>
     <form class="wwm-form" id="wwm-form" name="work-with-me" method="POST" data-netlify="true" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="work-with-me">
-      <p class="hidden-field" aria-hidden="true"><label>Leave this empty: <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+      <input type="hidden" name="_subject" value="SHOB — new work-with-me inquiry">
+      <p class="hidden-field" aria-hidden="true"><label>Leave this empty: <input name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
       <div class="form-row">
         <div class="field">
           <label for="wwm-name">Your name</label>
@@ -722,7 +723,8 @@
 
       <form class="news-form" id="news-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="nl-bot">
         <input type="hidden" name="form-name" value="newsletter">
-        <p class="hidden-field" aria-hidden="true"><label>Leave empty: <input name="nl-bot" tabindex="-1" autocomplete="off"></label></p>
+        <input type="hidden" name="_subject" value="SHOB — newsletter signup">
+        <p class="hidden-field" aria-hidden="true"><label>Leave empty: <input name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
         <label for="news-email" class="hidden-field">Your email</label>
         <input id="news-email" name="email" type="email" placeholder="you@example.com" required>
         <button class="btn btn-gold" type="submit">Join &nbsp;&#10022;</button>
@@ -760,8 +762,8 @@
    Leave blank and the page shows your email instead of failing silently.
 ------------------------------------------------------------------ */
 var FORM_ENDPOINTS = {
-  contact: '',      // e.g. 'https://formspree.io/f/abcdwxyz'
-  newsletter: ''    // e.g. 'https://formspree.io/f/efghijkl'
+  contact: 'https://formspree.io/f/mvkzedjo',
+  newsletter: 'https://formspree.io/f/mvkzedjo'
 };
 var CONTACT_EMAIL = 'xoxo.lovekenzie.business@gmail.com';
 

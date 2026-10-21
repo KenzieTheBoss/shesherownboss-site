@@ -235,7 +235,8 @@
 
     <form class="news-form" id="news-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="nl-bot">
       <input type="hidden" name="form-name" value="newsletter">
-      <p class="hidden-field" aria-hidden="true"><label>Leave empty: <input name="nl-bot" tabindex="-1" autocomplete="off"></label></p>
+      <input type="hidden" name="_subject" value="SHOB — journal newsletter signup">
+      <p class="hidden-field" aria-hidden="true"><label>Leave empty: <input name="_gotcha" tabindex="-1" autocomplete="off"></label></p>
       <label for="news-email" class="hidden-field">Your email</label>
       <input id="news-email" name="email" type="email" placeholder="you@example.com" required>
       <button class="btn btn-gold" type="submit">Send it to me &nbsp;&#10022;</button>
@@ -258,7 +259,7 @@
    FORM SETUP — paste your Formspree endpoint here and the signup works.
    Get one free at formspree.io. Leave blank and visitors see your email.
 ------------------------------------------------------------------ */
-var FORM_ENDPOINTS = { newsletter: '' };
+var FORM_ENDPOINTS = { newsletter: 'https://formspree.io/f/mvkzedjo' };
 var CONTACT_EMAIL = 'xoxo.lovekenzie.business@gmail.com';
 
 (function () {
